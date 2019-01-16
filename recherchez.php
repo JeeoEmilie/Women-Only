@@ -63,7 +63,7 @@ include('includes/header.php');
 
             <div class="card-body">
                 <form method="post" action="contact.php">
-                 <div class="form-group">
+                   <div class="form-group">
                     <label for="depart">Lieu de départ</label>
                     <input type="text" class="form-control" id="depart" name="depart" required placeholder="ex: Clermont-Ferrand">
                 </div>
@@ -95,11 +95,13 @@ include('includes/header.php');
             <label for="message">Votre message</label>
             <textarea class="form-control" id="message" name="message" rows="8" cols="50"></textarea>
         </div>
-        <p><h7 <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Envoyer</h7></p>
+        <div class="col-md-12 text-center"> 
+            <button  type="button" class="btn-center">Rechercher</button> 
+        </div>
     </div>
     
 
-    </div>
+</div>
 </div>
 
 </div>

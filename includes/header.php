@@ -23,7 +23,7 @@
 <body>
   <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="/">
-      <img src="images/logo.png" width="130" height="130" class="d-inline-block align-top" alt="">
+      <img src="images/logo.png" width="110" height="110" class="d-inline-block align-top" alt="">
       <h1 style="display:inline;">Women Only</h1>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,18 +43,39 @@
         <li class="nav-item">
           <a class="nav-link" href="recherchez.php" title="Vos recherches">Recherchez</a>
         </li>
+<?php
+if (!isset($_SESSION['id']))
+{
+?>
         <li class="nav-item">
           <a class="nav-link" href="inscription.php" title="Vous inscrire">Inscription</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="connexion.php" title="Vous connecter">Connexion</a>
         </li>
+<?php
+} else {
+?>
         <li class="nav-item">
           <a class="nav-link" href="compte.php" title="Mon compte">Mon compte</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="deconnexion.php" title="Deconnexion">Deconnexion</a>
+        </li>
+<?php
+}
+?>
       </ul>
     </div>
   </nav>
+<?php
+if (isset($_SESSION['id']))
+{
+?>
+Bonjour <?php echo $_SESSION['login']; ?>
+<?php
+}
+?>
 
   <div class="container main-container">
 

@@ -242,17 +242,19 @@ p {
 .nav-item{
     background-color: #B0E0E6;
     margin: 10px;
-}*/
+    }*/
 
-html {
-  position: relative;
-  min-height: 100%;
-}
+    html {
+      position: relative;
+      min-height: 100%;
+      font-family: cambria;
+  }
 
-body {
+  body {
     font-size: 1.2rem;
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    font-family: cambria;
+    margin-bottom: 60px;
+
 }
 
 .navbar{
@@ -279,3 +281,5 @@ ul.navbar-nav {
   /* Set the fixed height of the footer here */
   height: 60px;
 }
+
+/*Police : font-family: cambria

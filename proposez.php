@@ -101,17 +101,17 @@ include('includes/header.php');
               </div>
             </div>
             <br/>
-            <p>
-              <button type="button" class="btn btn-primary btn-lg">Vous inscrire</button>
-              <button type="button" class="btn btn-primary btn-lg">Vous connecter</button>
-            </p>
+            <div class="col-md-12 text-center"> 
+              <button  type="button" class="btn-center">Valider</button> 
+            </div>
+          </div>
 
-          </form>
-        </div>
+        </form>
       </div>
     </div>
   </div>
+</div>
 
-  <?php
-  include('includes/footer.php');
-  ?>
+<?php
+include('includes/footer.php');
+?>
